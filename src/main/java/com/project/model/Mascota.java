@@ -24,4 +24,9 @@ public class Mascota {
 	private String url_foto;
 	
 	
+	
+	// Se hace que se guarden los nombre en minuscula para que no haya errores por tipografia
+	public void setNombre(String nombre) {
+		this.nombre = nombre.toLowerCase();
+}
 }
