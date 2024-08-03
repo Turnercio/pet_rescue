@@ -6,6 +6,8 @@ import com.project.model.Mascota;
 
 public interface MascotaRepository extends PagingAndSortingRepository<Mascota, Long>{
 
+	Mascota findByNombre(String nombre);
+
 	
 	
 }
