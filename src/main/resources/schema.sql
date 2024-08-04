@@ -6,5 +6,5 @@ create table if not exists Mascota (
     raza varchar(50),
     peso float not null,
     tiene_chip boolean not null,
-    url_foto varchar(200) not null
+    url_foto varchar(200) 
 );

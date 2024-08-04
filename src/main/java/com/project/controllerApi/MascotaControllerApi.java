@@ -55,7 +55,7 @@ public class MascotaControllerApi {
 	@GetMapping("/youngest/{num_page}")
 	public Iterable<Mascota> findYoungest(@PathVariable("num_page") int num_page){
 		int cantidad = 20;
-		PageRequest pageRequest = PageRequest.of(num_page, cantidad, Sort.by("fecha_nac").descending());
+		PageRequest pageRequest = PageRequest.of(num_page, cantidad, Sort.by("fechaNac").descending());
 		return mascotaRepository.findAll(pageRequest);
 		
 	}
